@@ -15,10 +15,10 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn clean install --file properties/pom.xml
-    - name: Publish Docker
-      uses: elgohr/Publish-Docker-Github-Action@2.4
+    - name: Docker Build & Push
+      uses: mr-smithers-excellent/docker-build-push@v1.0
       with: 
-       name: propertyex
-       username: ${{ secrets.dockerusername }} 
-       password: ${{ secrets.dockerpassword }} 
-       registry: hub.docker.com
+        image: shashanksdixit/propertyex
+        registry: docker.io
+        username: ${{ secrets.dockerusername }}
+        password: ${{ secrets.dockerpassword }}
