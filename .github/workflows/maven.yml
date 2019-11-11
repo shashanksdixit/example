@@ -14,7 +14,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn clean install ../../properties/pom.xml
+      run: mvn clean install --file ../../properties/pom.xml
     - name: Publish Docker
       uses: elgohr/Publish-Docker-Github-Action@2.4
       with: 
