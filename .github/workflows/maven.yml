@@ -18,6 +18,7 @@ jobs:
     - name: Publish Docker
       uses: elgohr/Publish-Docker-Github-Action@2.4
       with: 
-       name: https://hub.docker.com/repository/docker/shashanksdixit
+       name: propertyex
        username: ${{ secrets.dockerusername }} 
        password: ${{ secrets.dockerpassword }} 
+       registry: hub.docker.com
