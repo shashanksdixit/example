@@ -13,8 +13,8 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file properties/pom.xml  
-    - uses: ./properties   
+    #- uses: ./properties   
     - name: Make Docker image
-      run: actions/properties@v1
+      run: properties/actions/properties@v1
       
       
