@@ -15,6 +15,6 @@ jobs:
       run: mvn -B package --file properties/pom.xml  
     #- uses: ./properties   
     - name: Make Docker image
-      run: ./shashanksdixit/example/properties@v1
+      run: ./example/properties@v1
       
       
