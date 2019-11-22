@@ -1,0 +1,5 @@
+name: 'Properties API'
+description: 'Get and Save properties'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
