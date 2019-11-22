@@ -1,5 +1,0 @@
-name: MakeDocker
-description: Make a docker image
-runs: 
- using: 'docker'
- image: 'Dockerfile'
